@@ -11,16 +11,33 @@ function Main() {
   return (
     <div className="Default dealer default">
       <form method="post" action="">
-        <a href="www.com" tabIndex="0" className="skip" target="_self">
+        <a
+          href="https://bitcoin.org/bitcoin.pdf"
+          tabIndex="0"
+          className="skip"
+          target="_self"
+        >
           Skip to Content
         </a>
 
-        <Header></Header>
-        <TopNav></TopNav>
+        <Header
+          text="Browse our complete catalog of OEM and licensed British heritage
+              parts for your classic British automobile. | Kalamazoo, MI"
+        ></Header>
+        <TopNav
+          siteName="EnglishParts.com"
+          address="5850 Stadium Dr, Kalamazoo, MI 49009"
+          phoneNumber="866.467.1776"
+          webAddress="sales@englishparts.com"
+          url="https://bitcoin.org/bitcoin.pdf"
+        ></TopNav>
         <UtilityBar></UtilityBar>
         <Breadcrumb></Breadcrumb>
         <Content></Content>
-        <Footer></Footer>
+        <Footer
+          url="https://bitcoin.org/bitcoin.pdf"
+          copyright="© 2021 EnglishParts.com"
+        ></Footer>
         <ServerName></ServerName>
       </form>
 

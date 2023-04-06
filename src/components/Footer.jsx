@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+function Footer(props) {
   return (
     <div className="footer" role="contentinfo">
       <div className="panel">
@@ -12,7 +12,7 @@ function Footer() {
                 <ul className="list-unstyled links-list">
                   <li className="acceptedPaymentsLink">
                     <a
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                       title="Accepted Payment"
@@ -23,7 +23,7 @@ function Footer() {
 
                   <li className="contactLink">
                     <a
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                       title="Contact Us"
@@ -33,7 +33,7 @@ function Footer() {
                   </li>
                   <li className="policyLink">
                     <a
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                       title="Policies"
@@ -43,7 +43,7 @@ function Footer() {
                   </li>
                   <li className="refundsLink">
                     <a
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                       title="Refunds"
@@ -53,7 +53,7 @@ function Footer() {
                   </li>
                   <li className="returnsLink">
                     <a
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                       title="Returns"
@@ -69,7 +69,7 @@ function Footer() {
                 <ul className="list-unstyled links-list">
                   <li title="Policies">
                     <a
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                       title="Policies"
@@ -87,7 +87,7 @@ function Footer() {
                 <ul className="list-unstyled links-list">
                   <li>
                     <a
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                       title="My Information"
@@ -98,7 +98,7 @@ function Footer() {
 
                   <li>
                     <a
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                       title="Testimonials"
@@ -132,7 +132,7 @@ function Footer() {
           <div className="row panel-body copyright-panel">
             <div className="container">
               <div className="row copyrightRow">
-                <div className="copyright-column">© 2021 EnglishParts.com</div>
+                <div className="copyright-column">{props.copyright}</div>
               </div>
             </div>
           </div>

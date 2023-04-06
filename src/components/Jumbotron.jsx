@@ -1,6 +1,6 @@
 import React from "react";
 
-function Jumbotron() {
+function Jumbotron(props) {
   return (
     <div id="Content_PageBody_heroJumbotron" className="jumbotron dealer">
       <div className="container">
@@ -17,18 +17,7 @@ function Jumbotron() {
               </div>
               <div className="panel-body">
                 <span className="defaultHeroBodyText">
-                  <span className="bodyTextSpan">
-                    Unmistakable style. That's what you love about your Austin
-                    Healey, Jaguar, MG, or Triumph. At EnglishParts.com, we
-                    carry a large selection of premium repair, maintenance and
-                    restoration parts for classic British cars. You know you can
-                    count on us because we're located in Kalamazoo, MI. Finding
-                    the right premium repair parts has always been our first
-                    priority. Our state of the art premium parts diagrams ensure
-                    that you're getting the perfect part the first time. Our
-                    experienced team knows these cars inside and out, and is
-                    here to help. Excellence. The first time, every time.
-                  </span>
+                  <span className="bodyTextSpan">{props.text}</span>
                 </span>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../files/logo.png";
 
-function TopNav() {
+function TopNav(props) {
   return (
     <div id="ContentPlaceHolderContainer" className="content en">
       <div
@@ -16,7 +16,7 @@ function TopNav() {
               <div className="navbar-header header-logo">
                 <a
                   className="navbar-brand business-logo"
-                  href="https://bitcoin.org/bitcoin.pdf"
+                  href={props.url}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -25,24 +25,24 @@ function TopNav() {
               </div>
               <div className="navbar-text business-information">
                 <div className="business-information__name heading-2" href="/">
-                  EnglishParts.com
+                  {props.siteName}
                 </div>
                 <div className="business-contact-details">
                   <div className="contact-detail business-contact-details__location">
-                    5850 Stadium Dr, Kalamazoo, MI 49009
+                    {props.address}
                   </div>
                   <div className="contact-detail business-contact-details__phone">
-                    866.467.1776
+                    {props.phoneNumber}
                   </div>
                   <div className="contact-detail business-contact-details__email">
                     <a
                       tabIndex="0"
                       className="small"
-                      href="https://bitcoin.org/bitcoin.pdf"
+                      href={props.url}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      sales@englishparts.com
+                      {props.webAddress}
                     </a>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ function TopNav() {
                   className="dropdown navigation-list-item"
                 >
                   <a
-                    href="https://bitcoin.org/bitcoin.pdf"
+                    href={props.url}
                     target="_blank"
                     rel="noreferrer"
                     data-toggle="dropdown"
@@ -85,7 +85,7 @@ function TopNav() {
 
                 <li>
                   <a
-                    href="https://bitcoin.org/bitcoin.pdf"
+                    href={props.url}
                     target="_blank"
                     rel="noreferrer"
                     className="about-us-link navigation-links heading-4"
