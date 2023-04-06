@@ -3,6 +3,7 @@ import AustinHealey from "../../files/austin-healey.png";
 import Jaguar from "../../files/jaguar.png";
 import Mg from "../../files/mg.png";
 import Triumph from "../../files/triumph.png";
+import Make from "./Make.jsx";
 
 function VehicleSelect() {
   return (
@@ -20,49 +21,25 @@ function VehicleSelect() {
               id="Content_PageBody_RefineResultsDefaultContainer"
               className="row refineResults"
             >
-              <a
-                className="seoLinkItem Make"
-                href="https://bitcoin.org/bitcoin.pdf"
-                target="_blank"
-                rel="noreferrer"
+              <Make
+                image={AustinHealey}
+                label="Austin Healey"
                 title="Shop OEM Austin Healey Parts"
-              >
-                <img src={AustinHealey} alt="" />
-                <div>Austin Healey</div>
-              </a>
+              ></Make>
 
-              <a
-                className="seoLinkItem Make"
-                href="https://bitcoin.org/bitcoin.pdf"
-                target="_blank"
-                rel="noreferrer"
+              <Make
+                image={Jaguar}
+                label="Jaguar"
                 title="Shop OEM Jaguar Parts"
-              >
-                <img src={Jaguar} alt="" />
-                <div>Jaguar</div>
-              </a>
+              ></Make>
 
-              <a
-                className="seoLinkItem Make"
-                href="https://bitcoin.org/bitcoin.pdf"
-                target="_blank"
-                rel="noreferrer"
-                title="Shop OEM MG Parts"
-              >
-                <img src={Mg} alt="" />
-                <div>MG</div>
-              </a>
+              <Make image={Mg} label="MG" title="Shop OEM MG Parts"></Make>
 
-              <a
-                className="seoLinkItem Make"
-                href="https://bitcoin.org/bitcoin.pdf"
-                target="_blank"
-                rel="noreferrer"
+              <Make
+                image={Triumph}
+                label="Triumph"
                 title="Shop OEM Triumph Parts"
-              >
-                <img src={Triumph} alt="" />
-                <div>Triumph</div>
-              </a>
+              ></Make>
             </div>
           </div>
         </div>

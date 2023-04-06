@@ -19,6 +19,10 @@ import PerformanceHandling from "../../files/performance-handling.jpg";
 import Suspension from "../../files/suspension.jpg";
 import Transmission from "../../files/transmission.jpg";
 
+/////////
+///////// Note: ideally, this would be programmatically generated w/ an array of objects, could also use 'v-for' in Vue, would be perfect for these category components
+/////////
+
 function CategoryContainer() {
   return (
     <div
@@ -42,18 +46,6 @@ function CategoryContainer() {
             </div>
             <div className="quickStartAltText"></div>
           </div>
-
-          {/* 
-            
-            
-            /////////
-            
-            Note: ideally, this would be programmatically generated w/ an array of objects, could also use 'v-for' in Vue, would be perfect for this 
-            
-            /////////
-            
-            
-            */}
 
           <div className="qsLinksContainer">
             <div
