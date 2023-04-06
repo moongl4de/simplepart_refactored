@@ -21,6 +21,7 @@ import OilSystem from "../../files/oil-system.jpg";
 import PerformanceHandling from "../../files/performance-handling.jpg";
 import Suspension from "../../files/suspension.jpg";
 import Transmission from "../../files/transmission.jpg";
+import PartBox from "./PartBox.jsx";
 
 function Content() {
   return (
@@ -150,360 +151,148 @@ function Content() {
                 <div className="quickStartAltText"></div>
               </div>
 
+              {/* 
+              
+              
+              /////////
+              
+              Note: ideally, this would be programmatically generated w/ an array of objects, could also use 'v-for' in Vue, would be perfect for this 
+              
+              /////////
+              
+              
+              */}
+
               <div className="qsLinksContainer">
                 <div
                   id="Content_PageBody_QuickStartControl_CategoryList"
                   className="category-panel"
                 >
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={Body}
                     title="Shop OEM Body Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Body}
-                          aria-hidden="true"
-                          alt="Shop OEM Body Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Body</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Body Parts"
+                    label="Body"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={Brakes}
                     title="Shop OEM Brake System Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Brakes}
-                          aria-hidden="true"
-                          alt="Shop OEM Brake System Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Brake System</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Brake System Parts"
+                    label="Brake System"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={Cables}
                     title="Shop OEM Cables"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Cables}
-                          aria-hidden="true"
-                          alt="Shop OEM Cables"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Cables</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Cables"
+                    label="Cables"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={CarCare}
                     title="Shop OEM Car Care, Tools and Shop Supplies"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={CarCare}
-                          aria-hidden="true"
-                          alt="Shop OEM Car Care, Tools and Shop Supplies"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">
-                        Car Care, Tools and Shop Supplies
-                      </div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Car Care, Tools and Shop Supplies"
+                    label="Car Care, Tools and Shop Supplies"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={CompetitionParts}
                     title="Shop OEM Competition Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={CompetitionParts}
-                          aria-hidden="true"
-                          alt="Shop OEM Competition Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">
-                        Competition Parts
-                      </div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Competition Parts"
+                    label="Competition Parts"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={TopsCovers}
                     title="Shop OEM Convertible Tops, Hard Tops and Tonneau Covers"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={TopsCovers}
-                          aria-hidden="true"
-                          alt="Shop OEM Convertible Tops, Hard Tops and Tonneau Covers"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">
-                        Convertible Tops, Hard Tops and Tonneau Covers
-                      </div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Convertible Tops, Hard Tops and Tonneau Covers"
+                    label="Convertible Tops, Hard Tops and Tonneau Covers"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={Cooling}
                     title="Shop OEM Cooling System Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Cooling}
-                          aria-hidden="true"
-                          alt="Shop OEM Cooling System Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Cooling System</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Cooling System Parts"
+                    label="Cooling System"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={ElectricalComponents}
                     title="Shop OEM Electrical Components"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={ElectricalComponents}
-                          aria-hidden="true"
-                          alt="Shop OEM Electrical Components"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">
-                        Electrical Components
-                      </div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Electrical Components"
+                    label="Electrical Components"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={EngineDriveline}
                     title="Shop OEM Engine and Driveline Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={EngineDriveline}
-                          aria-hidden="true"
-                          alt="Shop OEM Engine and Driveline Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">
-                        Engine and Driveline
-                      </div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Engine and Driveline Parts"
+                    label="Engine and Driveline"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={ExhaustEmissions}
                     title="Shop OEM Exhaust and Emissions"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={ExhaustEmissions}
-                          aria-hidden="true"
-                          alt="Shop OEM Exhaust and Emissions"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">
-                        Exhaust and Emissions
-                      </div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Exhaust and Emissions"
+                    label="Exhaust and Emissions"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={Exterior}
                     title="Shop OEM Exterior Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Exterior}
-                          aria-hidden="true"
-                          alt="Shop OEM Exterior Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Exterior</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Exterior Parts"
+                    label="Exterior"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={FuelSystem}
                     title="Shop OEM Fuel Systems"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={FuelSystem}
-                          aria-hidden="true"
-                          alt="Shop OEM Fuel Systems"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Fuel Systems</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Fuel Systems"
+                    label="Fuel Systems"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={Interior}
                     title="Shop OEM Interior Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Interior}
-                          aria-hidden="true"
-                          alt="Shop OEM Interior Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Interior</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Interior Parts"
+                    label="Interior"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                  <PartBox
+                    image={Maintenance}
                     title="Shop OEM Maintenance Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Maintenance}
-                          aria-hidden="true"
-                          alt="Shop OEM Maintenance Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Maintenance</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Maintenance Parts"
+                    label="Maintenance"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
+                  <PartBox
+                    image={OilSystem}
                     title="Shop OEM Oil System Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={OilSystem}
-                          aria-hidden="true"
-                          alt="Shop OEM Oil System Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Oil System</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Oil System Parts"
+                    label="Oil System"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
+                  <PartBox
+                    image={PerformanceHandling}
                     title="Shop OEM Performance &amp; Handling"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={PerformanceHandling}
-                          aria-hidden="true"
-                          alt="Shop OEM Performance &amp; Handling"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">
-                        Performance &amp; Handling
-                      </div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Performance &amp; Handling"
+                    label="Performance &amp; Handling"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
+                  <PartBox
+                    image={Suspension}
                     title="Shop OEM Suspension Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Suspension}
-                          aria-hidden="true"
-                          alt="Shop OEM Suspension Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">Suspension</div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Suspension Parts"
+                    label="Suspension"
+                  ></PartBox>
 
-                  <a
-                    className="qsCategoryLinkItem"
-                    href="https://bitcoin.org/bitcoin.pdf"
+                  <PartBox
+                    image={Transmission}
                     title="Shop OEM Transmission, Gearbox and Clutch Parts"
-                  >
-                    <div className="qsCategoryWrapper">
-                      <div className="qsImgWrapper">
-                        <img
-                          src={Transmission}
-                          aria-hidden="true"
-                          alt="Shop OEM Transmission, Gearbox and Clutch Parts"
-                        />
-                      </div>
-                      <div className="qsdisplayStringDiv">
-                        Transmission, Gearbox and Clutch
-                      </div>
-                    </div>
-                  </a>
+                    alt="Shop OEM Transmission, Gearbox and Clutch Parts"
+                    label="Transmission, Gearbox and Clutch"
+                  ></PartBox>
                 </div>
               </div>
             </div>
