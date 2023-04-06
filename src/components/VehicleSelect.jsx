@@ -1,5 +1,5 @@
 import React from "react";
-import MakeMap from "./MakeMap.jsx";
+import MakeMap from "./Map/MakeMap.jsx";
 
 function VehicleSelect() {
   return (

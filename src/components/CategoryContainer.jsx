@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryMap from "./CategoryMap.jsx";
+import CategoryMap from "./Map/CategoryMap.jsx";
 
 function CategoryContainer() {
   return (

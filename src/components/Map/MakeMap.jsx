@@ -1,9 +1,9 @@
 import React from "react";
-import AustinHealey from "../../files/austin-healey.png";
-import Jaguar from "../../files/jaguar.png";
-import Mg from "../../files/mg.png";
-import Triumph from "../../files/triumph.png";
-import Make from "./Make.jsx";
+import AustinHealey from "../../../files/austin-healey.png";
+import Jaguar from "../../../files/jaguar.png";
+import Mg from "../../../files/mg.png";
+import Triumph from "../../../files/triumph.png";
+import Make from "../Make.jsx";
 
 function MakeMap() {
   const makes = [
