@@ -4,7 +4,7 @@ For this assignment, I chose to refactor it with React as that's what I've been 
 
 ## Instructions
 
-- "It's time to show off your skills and determination. You are being asked to refactor this statically generated site into a project using the tech stack requested in the invite (i.e. VueJs, LESS, etc.). There will also be additional tech requests in the invite so please pay close attention and implement the features requested."
+- "It's time to show off your skills and determination. You are being asked to refactor this statically generated site into a project using the tech stack requested in the invite"
 
 - Implement using whatever framework/library you chooses (react, vuejs, node, mvc, etc)
 
