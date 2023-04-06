@@ -4,7 +4,7 @@ function Make(props) {
   return (
     <a
       className="seoLinkItem Make"
-      href="https://bitcoin.org/bitcoin.pdf"
+      href={props.url}
       target="_blank"
       rel="noreferrer"
       title={props.title}
