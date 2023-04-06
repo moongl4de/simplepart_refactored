@@ -113,8 +113,8 @@ function CategoryMap() {
       image: OilSystem,
     },
     {
-      title: "Shop OEM Performance &amp; Handling",
-      alt: "Shop OEM Performance &amp; Handling",
+      title: "Shop OEM Performance & Handling",
+      alt: "Shop OEM Performance & Handling",
       label: "Performance &amp; Handling",
       image: PerformanceHandling,
     },

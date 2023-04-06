@@ -1,8 +1,5 @@
 import React from "react";
-import PartBox from "./PartBox.jsx";
 import CategoryMap from "./CategoryMap.jsx";
-
-///////// Note: ideally, this would be programmatically generated w/ an array of objects, could also use 'v-for' in Vue, would be perfect for these category components
 
 function CategoryContainer() {
   return (
