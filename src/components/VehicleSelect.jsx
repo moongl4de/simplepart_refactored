@@ -1,9 +1,5 @@
 import React from "react";
-import AustinHealey from "../../files/austin-healey.png";
-import Jaguar from "../../files/jaguar.png";
-import Mg from "../../files/mg.png";
-import Triumph from "../../files/triumph.png";
-import Make from "./Make.jsx";
+import MakeMap from "./MakeMap.jsx";
 
 function VehicleSelect() {
   return (
@@ -21,25 +17,7 @@ function VehicleSelect() {
               id="Content_PageBody_RefineResultsDefaultContainer"
               className="row refineResults"
             >
-              <Make
-                image={AustinHealey}
-                label="Austin Healey"
-                title="Shop OEM Austin Healey Parts"
-              ></Make>
-
-              <Make
-                image={Jaguar}
-                label="Jaguar"
-                title="Shop OEM Jaguar Parts"
-              ></Make>
-
-              <Make image={Mg} label="MG" title="Shop OEM MG Parts"></Make>
-
-              <Make
-                image={Triumph}
-                label="Triumph"
-                title="Shop OEM Triumph Parts"
-              ></Make>
+              <MakeMap></MakeMap>
             </div>
           </div>
         </div>

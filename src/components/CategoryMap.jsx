@@ -133,7 +133,7 @@ function CategoryMap() {
   ];
 
   return (
-    <div>
+    <>
       {parts.map((part, x) => (
         <PartBox
           title={part.title}
@@ -143,7 +143,7 @@ function CategoryMap() {
           key={x}
         ></PartBox>
       ))}
-    </div>
+    </>
   );
 }
 
